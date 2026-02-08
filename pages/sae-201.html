@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAE 2.01 - Construire un réseau</title>
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="logo">&lt;CyberPortfolio /&gt;</div>
+        <nav>
+            <a href="../index.html">Accueil</a>
+            <a href="projets-perso.html">Projets Perso</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <a href="ue-administer.html" style="color: var(--text-muted);">&larr; Retour UE Administer</a>
+        
+        <h1>SAE 2.01 : Architecture Réseau</h1>
+        
+        <div class="card" style="margin-bottom: 30px;">
+            <h3>Présentation</h3>
+            <p>Pour cette SAE, nous avons dû réaliser un réseau informatique complet avec services.</p>
+        </div>
+
+        <div class="card">
+            <h3>Explication & Réalisation</h3>
+            <p>
+                Pour cette SAE, nous étions seuls. Nous devions réaliser un réseau informatique en utilisant du matériel réseau de niveau 2 (commutateur) et niveau 3 (routeur).
+                <br><br>
+                <strong>Objectifs techniques :</strong>
+            </p>
+            <ul>
+                <li>Création de 4 réseaux différents communicants (VLANs/Routage).</li>
+                <li>Mise en place de 3 liens entre les commutateurs (agrégation) pour assurer la redondance en cas de panne.</li>
+                <li>Communication avec un serveur de production : Trafic HTTP, SSH (port 22) et Rsync (port 873).</li>
+                <li>Mise en place d'un serveur FTP sur le réseau d'administration accessible aux utilisateurs.</li>
+            </ul>
+
+            <a href="#" target="_blank" class="btn-github">
+                Voir le projet sur GitHub
+            </a>
+        </div>
+    </div>
+</body>
+</html>

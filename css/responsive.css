@@ -1,0 +1,5 @@
+@media (max-width: 768px) {
+    .skills-grid { grid-template-columns: 1fr; }
+    header { flex-direction: column; gap: 15px; }
+    .container { padding: 20px; }
+}

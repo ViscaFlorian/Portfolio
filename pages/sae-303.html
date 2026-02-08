@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAE 3.03 - Réseau Multisite</title>
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="logo">&lt;CyberPortfolio /&gt;</div>
+        <nav>
+            <a href="../index.html">Accueil</a>
+            <a href="projets-perso.html">Projets Perso</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <a href="ue-administer.html" style="color: var(--text-muted);">&larr; Retour UE Administer</a>
+        
+        <h1>SAE 3.03 : Architecture Multisite</h1>
+        
+        <div class="card" style="margin-bottom: 30px;">
+            <h3>Présentation</h3>
+            <p>Conception d'une maquette de réseau d'entreprise multisite (e-commerce) pour réaliser leur interconnexion sécurisée.</p>
+        </div>
+
+        <div class="card">
+            <h3>Explication & Réalisation</h3>
+            <p>
+                Pour cette SAE, nous étions en groupe de trois. Nous avons utilisé le simulateur <strong>GNS3</strong>.
+                Le projet était divisé en trois grandes parties techniques :
+            </p>
+
+            <div style="margin-top: 20px;">
+                <h4 style="color: var(--secondary); border-bottom: 1px solid var(--border); padding-bottom: 5px;">1. Partie Services</h4>
+                <p>Mise en place de l'infrastructure serveur :</p>
+                <ul>
+                    <li><strong>DNS Primaire :</strong> Windows Server 2019.</li>
+                    <li><strong>DNS Secondaire :</strong> Machine Linux (CLI).</li>
+                    <li><strong>Web :</strong> Serveur Apache hébergeant un Intranet et un site externe.</li>
+                    <li><strong>Mail :</strong> Serveur SMTP fonctionnel.</li>
+                </ul>
+            </div>
+
+            <div style="margin-top: 20px;">
+                <h4 style="color: var(--secondary); border-bottom: 1px solid var(--border); padding-bottom: 5px;">2. Partie LAN</h4>
+                <p>Conception d'une infrastructure locale adaptée à la taille de l'entreprise (VLANs, commutation, redondance).</p>
+            </div>
+
+            <div style="margin-top: 20px;">
+                <h4 style="color: var(--secondary); border-bottom: 1px solid var(--border); padding-bottom: 5px;">3. Partie FAI (Interconnexion)</h4>
+                <p>Mise en place du réseau opérateur pour permettre la communication entre les différents sites géographiques de la société.</p>
+            </div>
+
+            <div style="margin: 30px 0; text-align: center;">
+                <img src="../assets/schema-gns3-303.png" alt="Topologie GNS3" style="max-width: 100%; border-radius: 8px; border: 1px solid var(--border);">
+                <p style="font-size: 0.9rem; color: var(--text-muted);">Aperçu de la topologie réalisée sous GNS3</p>
+            </div>
+
+            <p style="font-style: italic; color: var(--text-muted);">
+                Les rapports détaillés (LAN, FAI, Services) sont disponibles en PDF sur le dépôt.
+            </p>
+
+            <a href="#" target="_blank" class="btn-github">
+                Voir le projet sur GitHub
+            </a>
+        </div>
+    </div>
+</body>
+</html>

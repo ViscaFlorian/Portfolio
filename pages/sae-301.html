@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAE 3.01 - Système de transmission</title>
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="logo">&lt;CyberPortfolio /&gt;</div>
+        <nav>
+            <a href="../index.html">Accueil</a>
+            <a href="projets-perso.html">Projets Perso</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <a href="ue-administer.html" style="color: var(--text-muted);">&larr; Retour UE Administer</a>
+        
+        <h1>SAE 3.01 : Prise Connectée (IoT)</h1>
+        
+        <div class="card" style="margin-bottom: 30px;">
+            <h3>Présentation</h3>
+            <p>Réalisation d'une prise connectée pilotable à distance via un site web et une application.</p>
+        </div>
+
+        <div class="card">
+            <h3>Explication & Réalisation</h3>
+            <p>
+                Pour cette SAE, nous étions en groupes de quatre. L'objectif était de domotiser une prise électrique.
+                <br><br>
+                <strong>Matériel utilisé :</strong> Raspberry Pi, Arduino UNO, Capteur de température DS18B20.
+                <br><br>
+                <strong>Architecture technique :</strong>
+            </p>
+            <ul>
+                <li>Mise en place d'un serveur <strong>Mosquitto (MQTT)</strong> sur le Raspberry Pi pour communiquer avec l'Arduino.</li>
+                <li>Développement d'une page web sécurisée (Login/Mot de passe).</li>
+                <li>Synchronisation en temps réel entre la page web et l'application mobile de pilotage.</li>
+            </ul>
+
+            <a href="#" target="_blank" class="btn-github">
+                Voir le projet sur GitHub
+            </a>
+        </div>
+    </div>
+</body>
+</html>

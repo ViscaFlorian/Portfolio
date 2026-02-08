@@ -1,0 +1,11 @@
+:root {
+    --bg-dark: #0a0b10;
+    --bg-card: #16181e;
+    --text-main: #e2e8f0;
+    --text-muted: #94a3b8;
+    --accent: #00f0ff; /* Cyan */
+    --secondary: #7000ff; /* Violet */
+    --border: #2d3748;
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-tech: 'Courier New', monospace;
+}

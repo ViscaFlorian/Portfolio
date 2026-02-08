@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAE 2.04 - Projet Intégratif</title>
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="logo">&lt;CyberPortfolio /&gt;</div>
+        <nav>
+            <a href="../index.html">Accueil</a>
+            <a href="projets-perso.html">Projets Perso</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <a href="ue-administer.html" style="color: var(--text-muted);">&larr; Retour UE Administer</a>
+        
+        <h1>SAE 2.04 : Projet Intégratif</h1>
+        
+        <div class="card" style="margin-bottom: 30px;">
+            <h3>Présentation</h3>
+            <p>Réalisation complète d'une infrastructure : Réseau, Téléphonie, IoT (Collecte de données) et Web/BDD.</p>
+        </div>
+
+        <div class="card">
+            <h3>Mon Travail Personnel</h3>
+            <p>
+                Nous étions en groupe de 3. J'ai travaillé spécifiquement sur :
+            </p>
+            <ul>
+                <li><strong>Réseau :</strong> Mise en place du DHCP, aide sur les VLANs et l'adressage IP.</li>
+                <li><strong>Web & BDD :</strong> Création de la base du site (Django), page d'accueil, affichage des capteurs, et publication sur serveur Apache2.</li>
+            </ul>
+
+            <h3 style="margin-top: 30px; border-top: 1px solid var(--border); padding-top: 20px;">Vue d'ensemble du projet</h3>
+            <p>Le projet comportait 4 grandes parties interconnectées :</p>
+            <ul>
+                <li><strong>Réseau :</strong> Switch, Routeur (NAT/ACL), DNS.</li>
+                <li><strong>Téléphonie (ToIP) :</strong> 3 téléphones (Softphones/Physique) via protocole SIP (linphone).</li>
+                <li><strong>IoT :</strong> Collecte de données capteurs via script Python et protocole MQTT.</li>
+                <li><strong>Web/Data :</strong> Site Django sur Apache2 + Base MySQL. Le site permettait d'afficher les données des capteurs en temps réel, de filtrer par dates, d'exporter en CSV et de visualiser des graphiques de température moyenne.</li>
+            </ul>
+
+            <a href="#" target="_blank" class="btn-github">
+                Voir le projet sur GitHub
+            </a>
+        </div>
+    </div>
+</body>
+</html>

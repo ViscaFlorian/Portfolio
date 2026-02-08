@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAE 3.02 - Application Communicante</title>
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="logo">&lt;CyberPortfolio /&gt;</div>
+        <nav>
+            <a href="../index.html">Accueil</a>
+            <a href="projets-perso.html">Projets Perso</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <a href="ue-programmer.html" style="color: var(--text-muted);">&larr; Retour UE Programmer</a>
+        
+        <h1>SAE 3.02 : Serveur de Calcul</h1>
+        
+        <div class="card" style="margin-bottom: 30px;">
+            <h3>Présentation</h3>
+            <p>Pour cette SAE, nous devions réaliser un serveur de calcul permettant d'effectuer la compilation de code dans différents langages et de renvoyer le résultat.</p>
+        </div>
+
+        <div class="card">
+            <h3>Explication & Réalisation</h3>
+            <p>
+                Pour cette SAE, nous étions seuls. Nous avons dû réaliser un serveur de calcul dans le langage de programmation <strong>Python</strong>.
+                <br><br>
+                <strong>Architecture Maître / Esclave :</strong><br>
+                L'objectif était qu'un client se connecte sur le "maître" pour envoyer un code à exécuter en <strong>Python, Java, C ou C++</strong>. Le "maître" devait pouvoir accueillir plusieurs clients en même temps et répartir les tâches entre les "esclaves", qui réalisaient la compilation et l'exécution.
+            </p>
+
+            <h4 style="color: var(--secondary); margin-top: 20px;">Interfaces Graphiques (GUI)</h4>
+            <p>Nous avons développé deux interfaces :</p>
+            <ul>
+                <li><strong>Client :</strong> Permet de coder ou d'importer un code dans l'un des quatre langages supportés.</li>
+                <li><strong>Serveur Maître :</strong> Permet de visualiser les connexions actives et de suivre les communications.</li>
+            </ul>
+
+            <div style="margin: 20px 0; text-align: center;">
+                <p style="font-size: 0.9rem; color: var(--text-muted); font-style: italic;">(Tu peux ajouter ici une capture d'écran de ton interface Client ou Serveur)</p>
+            </div>
+            <p>
+                J'ai également rédigé les documentations d'installation et un rapport technique expliquant les choix technologiques (Sockets, Threading...), disponibles sur le dépôt.
+            </p>
+
+            <a href="#" target="_blank" class="btn-github">
+                Voir le projet sur GitHub
+            </a>
+        </div>
+    </div>
+</body>
+</html>
