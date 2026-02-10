@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAE 5.01 - Systèmes Embarqués</title>
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="logo">&lt;CyberPortfolio /&gt;</div>
+        <nav>
+            <a href="../index.html">Accueil</a>
+            <a href="projets-perso.html">Projets Perso</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <a href="ue-connecter.html" style="color: var(--text-muted);">&larr; Retour UE Connecter</a>
+        
+        <h1>SAE 5.01 : Systèmes Embarqués (IoT)</h1>
+        
+        <div class="card" style="margin-bottom: 30px;">
+            <h3>Présentation</h3>
+            <p>Réalisation d'un système de traçage de véhicule par GNSS via le réseau LoRaWAN.</p>
+        </div>
+
+        <div class="card">
+            <h3>Explication & Réalisation</h3>
+            <p>
+                Pour cette SAE, nous avons travaillé en groupes de 3 ou 4 étudiants. L'objectif principal était de concevoir un système embarqué capable de transmettre les coordonnées géographiques d'un véhicule et de visualiser sa position en temps réel sur une carte.
+            </p>
+
+            <h4 style="color: var(--secondary); margin-top: 20px;">Architecture Technique</h4>
+            <ul style="color: var(--text-muted);">
+                <li><strong>Matériel :</strong> Pytrack + FiPy/LoPy (dans le véhicule), Passerelle TTIG, Serveur Raspberry Pi.</li>
+                <li><strong>Énergie :</strong> Utilisation du mode "deep sleep" pour économiser la batterie (activation uniquement sur détection de mouvement via accéléromètre).</li>
+                <li><strong>Réseau :</strong> Transmission GNSS via LoRaWAN (The Things Network). Pont MQTT pour le transfert des données.</li>
+                <li><strong>Interface :</strong> Serveur <strong>Node-RED</strong> sur Raspberry Pi pour la cartographie et le tableau de bord.</li>
+            </ul>
+
+            <h4 style="color: var(--secondary); margin-top: 20px;">Fonctionnalités avancées</h4>
+            <p>
+                Nous avons mis en place un <strong>pilotage bidirectionnel</strong> : il est possible de forcer la mise en veille du traceur à distance via un message "Downlink" depuis l'interface web. De plus, un système d'alerte envoie automatiquement des SMS et notifications dès que le véhicule se déplace.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

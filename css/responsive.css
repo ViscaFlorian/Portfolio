@@ -1,5 +1,76 @@
+@media (max-width: 1024px) {
+    h1 { font-size: 3rem; }
+    .grid-ue { gap: 30px; }
+    .card { flex: 0 1 45%; }
+}
+
 @media (max-width: 768px) {
+    /* --- HEADER --- */
+    header {
+        height: auto;
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    nav {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav a { margin: 0; font-size: 0.9rem; }
+
+    /* --- SECTIONS --- */
+    section {
+        min-height: auto;
+        padding: 60px 0;
+        justify-content: flex-start;
+    }
+
+    .container { padding: 0 25px; }
+
+    /* --- TYPO --- */
+    h1 { font-size: 2.5rem; text-align: center; }
+    h2 { font-size: 1.8rem; text-align: center; margin-bottom: 40px; }
+    p { text-align: center; }
+
+    /* --- BOUTONS HERO MOBILE --- */
+    .hero-buttons {
+        flex-direction: column; /* Boutons l'un sous l'autre sur mobile */
+        gap: 15px;
+        align-items: center;
+    }
+    .btn-hero { width: 100%; max-width: 250px; text-align: center; }
+
+    /* --- TIMELINE MOBILE --- */
+    /* On garde la ligne à gauche comme sur PC, on ajuste juste les marges */
+    .timeline {
+        padding-left: 0;
+    }
+    .timeline-item {
+        margin-left: 40px; /* Moins de marge à gauche sur mobile */
+        padding: 20px;
+    }
+    .timeline::after {
+        left: 10px; /* Ligne plus proche du bord */
+    }
+    .timeline-item::before {
+        left: -38px; /* Ajustement du point */
+    }
+    /* On remet le texte à gauche */
+    .timeline-item p, .timeline-item h3 { text-align: left; }
+
+    /* --- CARTES --- */
+    .grid-ue { gap: 20px; }
+    .card {
+        width: 100%;
+        max-width: 100%;
+        flex: 1 1 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    /* --- SKILLS --- */
     .skills-grid { grid-template-columns: 1fr; }
-    header { flex-direction: column; gap: 15px; }
-    .container { padding: 20px; }
 }
